@@ -1,0 +1,42 @@
+
+
+<div class="row">
+  <div class="col-4" mdbTableCol *ngFor="let el of elements" >
+<div  class="add">
+  <mdb-card>
+    <!--Card image-->
+    <h4 mdbTableCol >{{el.id}}</h4>
+    <div class="img">
+    <mdb-card-img mdbTableCol src="{{el.image}}" alt="Card image cap"></mdb-card-img>
+  </div>
+    <!--Card content-->
+    <mdb-card-body>
+  
+      <!--Title-->
+      <mdb-card-title >
+        <h4>{{el.name}}</h4>
+      </mdb-card-title>
+  
+      <!--Text-->
+      <h5 mdbTableCol class="p1">Old Prize: {{el.current}}</h5>
+      <h5 mdbTableCol class="d1">{{el.discount}}</h5>
+      <h5 mdbTableCol class="p2">New Prize: {{el.prize}}</h5>
+      <h5 mdbTableCol class="d1">Start Date:{{el.startDate}}</h5>
+      <h5 mdbTableCol class="d2">End Date: {{el.endDate}}</h5>
+  
+      <a href="#" mdbBtn type="button" color="info"  mdbWavesEffect>approve</a>
+      <a href="#" mdbBtn type="button" color="info" mdbWavesEffect>Remove</a>
+      <br>
+      
+    </mdb-card-body>
+    
+
+  </mdb-card>
+</div>
+</div>
+
+</div>
+
+  
+  
+ 
