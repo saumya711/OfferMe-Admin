@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { AddvComponent } from './addv/addv.component';
 import { UserComponent } from './user/user.component';
 import { SubsComponent } from './subs/subs.component';
-import { ChartComponent } from './chart/chart.component';
+
 import { LinechartComponent } from './linechart/linechart.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FotterComponent } from './fotter/fotter.component';
@@ -31,7 +31,7 @@ import { MinChartComponent } from './min-chart/min-chart.component';
     AddvComponent,
     UserComponent,
     SubsComponent,
-    ChartComponent,
+    
     LinechartComponent,
     NavbarComponent,
     FotterComponent,
