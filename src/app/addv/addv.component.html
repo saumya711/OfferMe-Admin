@@ -6,23 +6,19 @@
   <mdb-card>
     <!--Card image-->
     <h4 mdbTableCol >{{el.id}}</h4>
-    <h4 mdbTableCol >C.Id:{{el.Cid}}</h4>
-    <h4 mdbTableCol >Item Code:{{el.IC}}</h4>
+    <h4 mdbTableCol >C.Id:{{el.categoryId}}</h4>
+    <h4 mdbTableCol >Item Code:{{el.itemCode}}</h4>
     <div class="img">
-    <mdb-card-img mdbTableCol src="{{el.image}}" alt="Card image cap"></mdb-card-img>
+    <mdb-card-img mdbTableCol src="{{el.photoUrl}}" alt="Card image cap"></mdb-card-img>
   </div>
-    <!--Card content-->
+    
     <mdb-card-body>
-  
-      <!--Title-->
-      <mdb-card-title >
+    <mdb-card-title >
         <h4>{{el.name}}</h4>
       </mdb-card-title>
-  
-      <!--Text-->
-      <h5 mdbTableCol class="p1">Old Prize: {{el.current}}</h5>
+      <h5 mdbTableCol class="p1">Old Prize: {{el.oldPrice}}</h5>
       <h5 mdbTableCol class="d1">{{el.discount}}</h5>
-      <h5 mdbTableCol class="p2">New Prize: {{el.prize}}</h5>
+      <h5 mdbTableCol class="p2">New Prize: {{el.newPrice}}</h5>
       <h5 mdbTableCol class="d1">Start Date:{{el.startDate}}</h5>
       <h5 mdbTableCol class="d2">End Date: {{el.endDate}}</h5>
   
@@ -31,9 +27,7 @@
       <br>
       
     </mdb-card-body>
-    
-
-  </mdb-card>
+    </mdb-card>
 </div>
 </div>
 
